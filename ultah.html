@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>HBD</title>
+</head>
+
+<body style="background-color: pink;">
+    <div class='position-absolute top-50 start-50 translate-middle'>
+        <button id='button' class='btn btn-primary btn-lg' onclick='mulai()'> Click Here! </button>
+        <div id='iloveyou' style='display: none;'>
+            <h2 class='text-center'>HAPPY BIRTHDAY KANA 🖕<br></h2>
+        </div>
+    </div>
+    <span id='hati' class='fixed-bottom text-center my-3' onclick='hati()'></span>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript">
+        const author = 'Aldinara';
+        document.getElementById('hati').innerHTML = `Made with &#10084;&#65039; by ${author}`;
+        const swals = Swal.mixin({
+            cancelButtonColor: '#d33',
+            confirmButtonColor: '#3085d6',
+        });
+        async function mulai() {
+            await swals.fire('Halo Kana', 'temen dari bumble yang ga sampe seminggu HAHAHA', 'question');
+            var { isConfirmed: Baca } = await swals.fire({
+                title: `ini km buka dan dibaca kan yaa?`,
+                confirmButtonText: 'Baca',
+                cancelButtonText: 'Gak',
+                showCancelButton: true,
+            });
+            await swals.fire('harus dibuka dong kalau enggaa yaaaa ANJ UDAH DIBIKININ JUGA MASA GA DIBUKAAA!!');
+            await swals.fire('sian gaada yang ngucapin jadi aku ucapkan ni, hanya ucapan si tapi dari website gini');
+            await swals.fire('jadiii');
+            await swals.fire('Selamat Ulang Tahun KANAA , Happy Birthday, يوم ميلاد  ,  お誕生日おめでとう  ,  생일 축하 , С днем ​​рождения🥳🎊');
+            await swals.fire('note : btw aku kada tahu nama asli atau nama panjang km siapa jadi yaa kana ai mwhehe');
+            await swals.fire('selamat ulang tahun yang ke 925!');
+            await swals.fire('semoga panjang umur, sehat selalu, banyak rizeki');
+            await swals.fire('Semoga apa yang km harapkan dan inginkan tercapai semua yaa');
+            await swals.fire('Semoga kedepannya penuh dengan keceriaan, makanan enak, dan mixue gratis dari temenmuu!');
+            await swals.fire('walau kita baru kenal ga sampe seminggu, semoga umur km lebih panjang dari chat kita "masa umurkm seminggu ja"');
+            await swals.fire('Semoga km penuh tawa dan kejutan yang bikin km semakin bahagia!');
+            await swals.fire('maaf kalau aku ga bisa ngasih apa apa cuma ini doang maaf bangettt :)');
+            await swals.fire('Semoga km suka dikasih yang beginian walau gaada apa apanya wkwkw');
+            await swals.fire('dari Aldinara - 19 Agustus 2023');
+            await swals.fire('eh iya, terakhir beneran nih');
+            await swals.fire('Coba klik ikon hati di paling bawah dong');
+
+
+        }
+        function hati() {
+            document.getElementById('button').style = 'display: none';
+            document.getElementById('iloveyou').style = '';
+        }
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
